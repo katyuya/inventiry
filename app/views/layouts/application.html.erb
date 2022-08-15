@@ -10,7 +10,15 @@
   </head>
   
   <header>
-    
+    <div class="logo">
+      <%= link_to "Inventory", root_path, class: "title" %>
+    </div>
+    <nav>
+      <ul>
+        <li><%= link_to "top", root_path, class: "side" %></li>
+        <li><%= link_to "一覧", root_path, class: "side" %></li>
+      </ul>
+    </nav>
   </header>
   <body>
     <%= yield %>
