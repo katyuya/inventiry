@@ -1,0 +1,2 @@
+class Invento < ApplicationRecord
+end

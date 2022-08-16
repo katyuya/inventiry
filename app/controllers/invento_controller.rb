@@ -1,0 +1,2 @@
+class InventoController < ApplicationController
+end
