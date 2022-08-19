@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2022_08_17_143737) do
     t.integer "ordernumber"
     t.string "customer"
     t.string "product"
+    t.integer "ruler"
     t.integer "platform"
     t.string "progress"
     t.datetime "created_at", null: false

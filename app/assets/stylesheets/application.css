@@ -19,7 +19,7 @@
  }
 header{
     background-color: cyan;
-    padding: 20px;
+    padding: 20px 0;
     height: 80px;
     width: 100%;
     text-align: center;
@@ -48,14 +48,27 @@ li{
 }
 
 .btn{
+    padding: 10px 20px;
     color: #000;
-    background-color: #66FF66;
-    border-bottom: solid 5px #000;
+    text-decoration: none;
+    background-color: #00EE00;
+    border-radius: 5px;
 }
 
 .btn:hover{
-    margin-top: 3px;
+    text-decoration: none;
     color: #000;
     background-color: #66FF33;
-    border-bottom: solid 2px ;
+}
+
+.summary{
+    text-align: center;
+    height: 880px;
+    width: 100%;
+    background-color: cyan;
+}
+
+.tablehead{
+    padding: 0 20px;
+    padding-top: 40px;
 }

@@ -4,6 +4,7 @@ class CreateInventos < ActiveRecord::Migration[5.2]
       t.integer :ordernumber
       t.string :customer
       t.string :product
+      t.integer :ruler
       t.integer :platform
       t.string :progress
 
