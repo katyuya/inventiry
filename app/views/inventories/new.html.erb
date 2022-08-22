@@ -1,7 +1,14 @@
-<div style="width: 500px;">
+<div style="width: 500px; margin: 0 auto;">
+  
+  <div class="mb-5" style="text-align: center">
+    <input type="radio" name="product" value="生産管理" id="p1" checked/>手料理
+    <span style="padding-left: 25px;"><input type="radio" name="product" value="在庫管理" id="p2"/>お店の料理</span>
+  </div>
+
+  
   <%= form_with model: @invento, local:true do |f| %>
   <table>
-    <tbody>
+    <tbody id="management">
       
       <tr>
         <td>注文番号</td>
@@ -9,23 +16,23 @@
       </tr>
       
       <tr>
-        <td>注文番号</td>
+        <td>顧客</td>
         <td><%= f.textfield :customer %></td>
       </tr>
       
       <tr>
-        <td>注文番号</td>
+        <td>製品名</td>
         <td><%= f.textfield :product %></td>
       </tr>
       
       <tr>
-        <td>注文番号</td>
-        <td><%= f.textfield :number %></td>
+        <td>台数</td>
+        <td><%= f.textfield :platform %></td>
       </tr>
       
       <tr>
-        <td>注文番号</td>
-        <td><%= f.textfield :number %></td>
+        <td>進捗状況</td>
+        <td><%= f.textfield :progress %></td>
       </tr>
       
     </tbody>

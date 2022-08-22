@@ -13,4 +13,22 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require_tre
+
+$(document).on('turbolinks:load',function(){
+
+  $('[name="product"]:radio').change( function() {
+	if($('[id=p1]').prop('checked')){
+
+    //お店の料理
+	  $('#production').css('display','block');
+	  $('#management').css('display','none');
+	} else if ($('[id=p2]').prop('checked')) {
+
+    //手料理
+	  $('#production').css('display','none');
+	  $('#management').css('display','block');
+    }
+  });
+
+})
