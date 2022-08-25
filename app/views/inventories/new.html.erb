@@ -8,7 +8,7 @@
   
   <%= form_with model: @invento, local:true do |f| %>
   <table>
-    <tbody id="management">
+    <tbody id="production">
       
       <tr>
         <td>注文番号</td>
@@ -37,4 +37,38 @@
       
     </tbody>
   </table>
+  <% end %>
+  
+  <%= form_with model: @invento, local:true do |f| %>
+  <table>
+    <tbody id="management">
+      
+      <tr>
+        <td>板厚</td>
+        <td><%= f.textfield :ordernumber %></td>
+      </tr>
+      
+      <tr>
+        <td>材質</td>
+        <td><%= f.textfield :customer %></td>
+      </tr>
+      
+      <tr>
+        <td>定尺</td>
+        <td><%= f.textfield :ruler %></td>
+      </tr>
+      
+      <tr>
+        <td>枚数</td>
+        <td><%= f.textfield :platform %></td>
+      </tr>
+      
+      <tr>
+        <td>在庫状況</td>
+        <td><%= f.textfield :progress %></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <% end %>
 </div>
