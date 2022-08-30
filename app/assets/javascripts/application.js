@@ -10,12 +10,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+//= require jquery3
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tre
+//= require_tree .
 
-$(document).on('turbolinks:load',function(){
+
+$(function () {
 
   $('[name="product"]:radio').change( function() {
 	if($('[id=p1]').prop('checked')){
@@ -30,5 +33,4 @@ $(document).on('turbolinks:load',function(){
 	  $('#management').css('display','block');
     }
   });
-
-})
+});

@@ -13,19 +13,19 @@
       </tr>
     </thead>
     <tbody>
-      <% @inventos.each do |invent| %>
+      <% @inventories.each do |invento| %>
       <tr>
-        <td><%= invent.ordernumber %></td>
-        <td><%= invent.customer %></td>
+        <td><%= invento.ordernumber %></td>
+        <td><%= invento.customer %></td>
         <td>
-          <% if invent.product %>
-            <%= invent.product %>
+          <% if invento.product %>
+            <%= invento.product %>
           <% else %>
-            <%= invent.ruler %>
+            <%= invento.ruler %>
           <% end %>
         </td>
-        <td><%= invent.platform %></td>
-        <td><%= invent.progress %></td>
+        <td><%= invento.platform %></td>
+        <td><%= invento.progress %></td>
       </tr>
       <% end %>
     </tbody>

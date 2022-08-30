@@ -1,6 +1,6 @@
 class InventoriesController < ApplicationController
   def index
-    @inventos = Invento.all
+    @inventories = Invento.all
   end
 
   def new
@@ -9,7 +9,7 @@ class InventoriesController < ApplicationController
 
   def create
     @invento = Invento.new(invento_params)
-    if @invento.save
+    if @inventory.save
       redirect_to inventories_path
     else
       render :new
@@ -23,7 +23,7 @@ class InventoriesController < ApplicationController
 
   def update
     @invento = Invento.find(params[:id])
-    if @invento.save
+    if @inventory.update(invento_params)
       redirect_to inventories_path
     else
       render :edit

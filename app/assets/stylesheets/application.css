@@ -78,3 +78,6 @@ li{
     margin: 20px auto;
     
 }
+#management{
+    display: none;
+}
