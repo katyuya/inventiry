@@ -1,6 +1,6 @@
-class CreateInventos < ActiveRecord::Migration[5.2]
+class CreateProductions < ActiveRecord::Migration[5.2]
   def change
-    create_table :inventos do |t|
+    create_table :productions do |t|
       t.integer :ordernumber
       t.string :customer
       t.string :product

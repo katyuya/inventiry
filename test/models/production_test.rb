@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class InventoriesControllerTest < ActionDispatch::IntegrationTest
+class ProductionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class InventoTest < ActiveSupport::TestCase
+class ProductionsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

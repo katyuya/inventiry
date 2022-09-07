@@ -1,6 +1,6 @@
 <div style="width: 100%;">
   <div class="new">
-  <%= link_to "登録", new_inventory_path %>
+  <%= link_to "登録", new_production_path %>
   </div>
   <table style="margin: 0 auto; border-bottom: solid 1px #000s;">
     <thead style="border-bottom: solid 1px #000;">
@@ -13,19 +13,19 @@
       </tr>
     </thead>
     <tbody>
-      <% @inventories.each do |invento| %>
+      <% @productions.each do |pro| %>
       <tr>
-        <td><%= invento.ordernumber %></td>
-        <td><%= invento.customer %></td>
+        <td><%= pro.ordernumber %></td>
+        <td><%= pro.customer %></td>
         <td>
-          <% if invento.product %>
-            <%= invento.product %>
+          <% if pro.product %>
+            <%= pro.product %>
           <% else %>
-            <%= invento.ruler %>
+            <%= pro.ruler %>
           <% end %>
         </td>
-        <td><%= invento.platform %></td>
-        <td><%= invento.progress %></td>
+        <td><%= pro.platform %></td>
+        <td><%= pro.progress %></td>
       </tr>
       <% end %>
     </tbody>

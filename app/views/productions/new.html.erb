@@ -6,9 +6,9 @@
   </div>
 
 
-  <%= form_with model: @inventory, local:true do |f| %>
+  <%= form_with model: @production, local:true do |f| %>
   <table>
-    <tbody id="production">
+    <tbody id="pro">
 
       <tr>
         <td>注文番号</td>
@@ -38,10 +38,9 @@
     </tbody>
   </table>
   <% end %>
-
-  <%= form_with model: @invento, local:true do |f| %>
+  <%= form_with model: @production, local:true do |f| %>
   <table>
-    <tbody id="management">
+    <tbody id="man">
 
       <tr>
         <td>板厚</td>

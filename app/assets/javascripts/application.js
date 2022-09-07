@@ -24,13 +24,13 @@ $(function () {
 	if($('[id=p1]').prop('checked')){
 
     //お店の料理
-	  $('#production').css('display','block');
-	  $('#management').css('display','none');
+	  $('#pro').css('display','block');
+	  $('#man').css('display','none');
 	} else if ($('[id=p2]').prop('checked')) {
 
     //手料理
-	  $('#production').css('display','none');
-	  $('#management').css('display','block');
+	  $('#pro').css('display','none');
+	  $('#man').css('display','block');
     }
   });
 });
