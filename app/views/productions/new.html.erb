@@ -1,6 +1,6 @@
 <div style="width: 500px; margin: 0 auto;">
 
-  <div class="mb-5" style="text-align: center">
+  <div style="margin-top: 50px; text-align: center">
     <input type="radio" name="product" value="生産管理" id="p1" checked/>生産管理
     <span style="padding-left: 25px;"><input type="radio" name="product" value="在庫管理" id="p2"/>在庫管理</span>
   </div>
@@ -11,28 +11,28 @@
     <tbody id="pro">
 
       <tr>
-        <td>注文番号</td>
-        <td><%= f.text_field :ordernumber %></td>
+        <td class="tn">注文番号</td>
+        <td><%= f.text_field :ordernumber, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>顧客</td>
-        <td><%= f.text_field :customer %></td>
+        <td class="tn">顧客</td>
+        <td><%= f.text_field :customer, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>製品名</td>
-        <td><%= f.text_field :product %></td>
+        <td class="tn">製品名</td>
+        <td><%= f.text_field :product, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>台数</td>
-        <td><%= f.text_field :platform %></td>
+        <td class="tn">台数</td>
+        <td><%= f.text_field :platform, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>進捗状況</td>
-        <td><%= f.text_field :progress %></td>
+        <td class="tn">進捗状況</td>
+        <td><%= f.text_field :progress, class: "tf" %></td>
       </tr>
 
     </tbody>
@@ -43,28 +43,28 @@
     <tbody id="man">
 
       <tr>
-        <td>板厚</td>
-        <td><%= f.text_field :ordernumber %></td>
+        <td class="tn">板厚</td>
+        <td><%= f.text_field :ordernumber, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>材質</td>
-        <td><%= f.text_field :customer %></td>
+        <td class="tn">材質</td>
+        <td><%= f.text_field :customer, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>定尺</td>
-        <td><%= f.text_field :ruler %></td>
+        <td class="tn">定尺</td>
+        <td><%= f.text_field :ruler, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>枚数</td>
-        <td><%= f.text_field :platform %></td>
+        <td class="tn">枚数</td>
+        <td><%= f.text_field :platform, class: "tf" %></td>
       </tr>
 
       <tr>
-        <td>在庫状況</td>
-        <td><%= f.text_field :progress %></td>
+        <td class="tn">在庫状況</td>
+        <td><%= f.text_field :progress, class: "tf" %></td>
       </tr>
 
     </tbody>

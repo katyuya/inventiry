@@ -78,6 +78,16 @@ li{
     margin: 20px auto;
 
 }
+
 #man{
     display: none;
+}
+
+.tn{
+    width: 150px;
+    padding: 10px 50px;
+}
+
+.tf{
+    width: 200px;
 }
