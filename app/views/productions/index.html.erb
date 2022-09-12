@@ -10,6 +10,8 @@
         <th class="tablehead">製品名/定尺</th>
         <th class="tablehead">台数/枚数</th>
         <th class="tablehead">進捗状況/在庫状況</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -26,6 +28,8 @@
         </td>
         <td class="tablehead"><%= pro.platform %></td>
         <td class="tablehead"><%= pro.progress %></td>
+        <td><%= link_to "編集", edit_production_path(pro.id) %></td>
+        <td></td>
       </tr>
       <% end %>
     </tbody>
