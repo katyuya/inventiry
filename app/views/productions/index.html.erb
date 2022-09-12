@@ -15,17 +15,17 @@
     <tbody>
       <% @productions.each do |pro| %>
       <tr>
-        <td><%= pro.ordernumber %></td>
-        <td><%= pro.customer %></td>
-        <td>
+        <td class="tablehead"><%= pro.ordernumber %></td>
+        <td class="tablehead"><%= pro.customer %></td>
+        <td class="tablehead">
           <% if pro.product %>
             <%= pro.product %>
           <% else %>
             <%= pro.ruler %>
           <% end %>
         </td>
-        <td><%= pro.platform %></td>
-        <td><%= pro.progress %></td>
+        <td class="tablehead"><%= pro.platform %></td>
+        <td class="tablehead"><%= pro.progress %></td>
       </tr>
       <% end %>
     </tbody>

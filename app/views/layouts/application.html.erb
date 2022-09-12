@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
+
   <header>
     <div class="logo">
       <%= link_to "Inventory", root_path, class: "title" %>
@@ -16,7 +16,7 @@
     <nav>
       <ul>
         <li><%= link_to "top", root_path, class: "side" %></li>
-        <li><%= link_to "一覧", root_path, class: "side" %></li>
+        <li><%= link_to "一覧", productions_path, class: "side" %></li>
       </ul>
     </nav>
   </header>
