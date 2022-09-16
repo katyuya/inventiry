@@ -17,20 +17,22 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).on('turbolinks:load',function(){
 
-$(function () {
+    $(function () {
 
-  $('[name="product"]:radio').change( function() {
-	if($('[id=p1]').prop('checked')){
+      $('[name="product"]:radio').change( function() {
+    	if($('[id=p1]').prop('checked')){
 
-    //お店の料理
-	  $('#pro').css('display','block');
-	  $('#man').css('display','none');
-	} else if ($('[id=p2]').prop('checked')) {
+        //お店の料理
+    	  $('#pro').css('display','block');
+    	  $('#man').css('display','none');
+    	} else if ($('[id=p2]').prop('checked')) {
 
-    //手料理
-	  $('#pro').css('display','none');
-	  $('#man').css('display','block');
-    }
-  });
+        //手料理
+    	  $('#pro').css('display','none');
+    	  $('#man').css('display','block');
+        }
+      });
+    });
 });

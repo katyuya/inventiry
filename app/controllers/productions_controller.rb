@@ -30,6 +30,12 @@ class ProductionsController < ApplicationController
     end
   end
 
+  def destroy
+    @production = Production.find(invento_params)
+    @production.destroy
+    redirect_to productions_path
+  end
+
   private
 
   def invento_params

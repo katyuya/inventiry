@@ -91,3 +91,17 @@ li{
 .tf{
     width: 200px;
 }
+
+.bt{
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.bt:hover{
+    width: 100px;
+    background-color: green;
+    border-radius: 10px;
+    font-size: 15px;
+}

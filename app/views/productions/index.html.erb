@@ -29,7 +29,7 @@
         <td class="tablehead"><%= pro.platform %></td>
         <td class="tablehead"><%= pro.progress %></td>
         <td><%= link_to "編集", edit_production_path(pro.id) %></td>
-        <td></td>
+        <td><%= link_to "削除", production_path(pro.id), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>
       </tr>
       <% end %>
     </tbody>
