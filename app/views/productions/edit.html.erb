@@ -1,0 +1,80 @@
+<div class="new-form">
+  <div style="width: 500px; margin: 50px auto;">
+
+
+    <%= form_with model: @production, local:true do |f| %>
+    <table>
+      <tbody id="pro">
+
+        <tr>
+          <td class="tn">注文番号</td>
+          <td><%= f.text_field :ordernumber, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">顧客</td>
+          <td><%= f.text_field :customer, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">製品名</td>
+          <td><%= f.text_field :product, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">台数</td>
+          <td><%= f.text_field :platform, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">進捗状況</td>
+          <td><%= f.text_field :progress, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><button class="bt" type="submit">変更を保存</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <% end %>
+    <%= form_with model: @production, local:true do |f| %>
+    <table>
+      <tbody id="man">
+
+        <tr>
+          <td class="tn">板厚</td>
+          <td><%= f.text_field :ordernumber, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">材質</td>
+          <td><%= f.text_field :customer, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">定尺</td>
+          <td><%= f.text_field :ruler, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">枚数</td>
+          <td><%= f.text_field :platform, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">在庫状況</td>
+          <td><%= f.text_field :progress, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><button class="bt" type="submit">変更を保存</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <% end %>
+  </div>
+</div>

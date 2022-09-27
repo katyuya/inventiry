@@ -88,7 +88,8 @@ li{
 
 .new{
     width: 80%;
-    text-align: left;
+    display: flex;
+    justify-content: flex-end;
     margin: 20px auto;
 
 }
@@ -119,4 +120,27 @@ li{
     background-color: #A4C6FF;
     border-radius: 10px;
     font-size: 15px;
+}
+
+.btn-new{
+    padding: 5px 15px;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #00EE00;
+    border-radius: 5px;
+
+}
+
+.btn-new:hover{
+    text-decoration: none;
+    color: #FFF;
+    background-color: #66FF33;
+
+}
+
+.new-form{
+    text-align: center;
+    height: 880px;
+    width: 100%;
+    background-color: cyan;
 }

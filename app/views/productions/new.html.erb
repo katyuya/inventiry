@@ -1,83 +1,85 @@
-<div style="width: 500px; margin: 0 auto;">
+<div class="new-form">
+  <div style="width: 500px; margin: 0 auto;">
 
-  <div style="margin-top: 50px; text-align: center">
-    <input type="radio" name="product" value="生産管理" id="p1" checked/>生産管理
-    <span style="padding-left: 25px;"><input type="radio" name="product" value="在庫管理" id="p2"/>在庫管理</span>
+    <div style="margin-top: 50px; text-align: center">
+      <input type="radio" name="product" value="生産管理" id="p1" checked/>生産管理
+      <span style="padding-left: 25px;"><input type="radio" name="product" value="在庫管理" id="p2"/>在庫管理</span>
+    </div>
+
+
+    <%= form_with model: @production, local:true do |f| %>
+    <table>
+      <tbody id="pro">
+
+        <tr>
+          <td class="tn">注文番号</td>
+          <td><%= f.text_field :ordernumber, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">顧客</td>
+          <td><%= f.text_field :customer, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">製品名</td>
+          <td><%= f.text_field :product, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">台数</td>
+          <td><%= f.text_field :platform, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">進捗状況</td>
+          <td><%= f.text_field :progress, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><button class="bt" type="submit">新規投稿</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <% end %>
+    <%= form_with model: @production, local:true do |f| %>
+    <table>
+      <tbody id="man">
+
+        <tr>
+          <td class="tn">板厚</td>
+          <td><%= f.text_field :ordernumber, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">材質</td>
+          <td><%= f.text_field :customer, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">定尺</td>
+          <td><%= f.text_field :ruler, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">枚数</td>
+          <td><%= f.text_field :platform, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td class="tn">在庫状況</td>
+          <td><%= f.text_field :progress, class: "tf" %></td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td><button class="bt" type="submit">新規投稿</button></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <% end %>
   </div>
-
-
-  <%= form_with model: @production, local:true do |f| %>
-  <table>
-    <tbody id="pro">
-
-      <tr>
-        <td class="tn">注文番号</td>
-        <td><%= f.text_field :ordernumber, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">顧客</td>
-        <td><%= f.text_field :customer, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">製品名</td>
-        <td><%= f.text_field :product, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">台数</td>
-        <td><%= f.text_field :platform, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">進捗状況</td>
-        <td><%= f.text_field :progress, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td></td>
-        <td><button class="bt" type="submit">新規投稿</button></td>
-      </tr>
-
-    </tbody>
-  </table>
-  <% end %>
-  <%= form_with model: @production, local:true do |f| %>
-  <table>
-    <tbody id="man">
-
-      <tr>
-        <td class="tn">板厚</td>
-        <td><%= f.text_field :ordernumber, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">材質</td>
-        <td><%= f.text_field :customer, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">定尺</td>
-        <td><%= f.text_field :ruler, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">枚数</td>
-        <td><%= f.text_field :platform, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td class="tn">在庫状況</td>
-        <td><%= f.text_field :progress, class: "tf" %></td>
-      </tr>
-
-      <tr>
-        <td></td>
-        <td><button class="bt" type="submit">新規投稿</button></td>
-      </tr>
-
-    </tbody>
-  </table>
-  <% end %>
 </div>
