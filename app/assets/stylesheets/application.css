@@ -139,7 +139,12 @@ li{
 }
 
 .new-form{
-    text-align: center;
+    height: 880px;
+    width: 100%;
+    background-color: cyan;
+}
+
+.index-invento{
     height: 880px;
     width: 100%;
     background-color: cyan;

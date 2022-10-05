@@ -1,38 +1,40 @@
-<div style="width: 100%;">
-  <div class="new">
-  <%= link_to "登録", new_production_path, class: "btn-new" %>
-  </div>
-  <table style="margin: 0 auto; border-bottom: solid 1px #000s;">
-    <thead style="border-bottom: solid 1px #000;">
-      <tr>
-        <th class="tablehead">受注番号/板厚</th>
-        <th class="tablehead">顧客/板材</th>
-        <th class="tablehead">製品名/定尺</th>
-        <th class="tablehead">台数/枚数</th>
-        <th class="tablehead">進捗状況/在庫状況</th>
-        <th></th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @productions.each do |pro| %>
-      <tr>
-        <td class="tablehead"><%= pro.ordernumber %></td>
-        <td class="tablehead"><%= pro.customer %></td>
-        <td class="tablehead">
-          <% if pro.product %>
-            <%= pro.product %>
-          <% else %>
-            <%= pro.ruler %>
-          <% end %>
-        </td>
-        <td class="tablehead"><%= pro.platform %></td>
-        <td class="tablehead"><%= pro.progress %></td>
-        <td><%= link_to "編集", edit_production_path(pro.id), class: "btn" %></td>
-        <td><%= link_to "削除", production_path(pro.id), method: :delete, "data-confirm" => "本当に削除しますか？", class: "btn-delete" %></td>
-      </tr>
-      <% end %>
-    </tbody>
-  </table>
+<div class="index-invento">
+  <div style="width: 100%;">
+    <div class="new">
+    <%= link_to "登録", new_production_path, class: "btn-new" %>
+    </div>
+    <table style="margin: 0 auto; border-bottom: solid 1px #000s;">
+      <thead style="border-bottom: solid 1px #000;">
+        <tr>
+          <th class="tablehead">受注番号/板厚</th>
+          <th class="tablehead">顧客/板材</th>
+          <th class="tablehead">製品名/定尺</th>
+          <th class="tablehead">台数/枚数</th>
+          <th class="tablehead">進捗状況/在庫状況</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @productions.each do |pro| %>
+        <tr>
+          <td class="tablehead"><%= pro.ordernumber %></td>
+          <td class="tablehead"><%= pro.customer %></td>
+          <td class="tablehead">
+            <% if pro.product %>
+              <%= pro.product %>
+            <% else %>
+              <%= pro.ruler %>
+            <% end %>
+          </td>
+          <td class="tablehead"><%= pro.platform %></td>
+          <td class="tablehead"><%= pro.progress %></td>
+          <td><%= link_to "編集", edit_production_path(pro.id), class: "btn" %></td>
+          <td><%= link_to "削除", production_path(pro.id), method: :delete, "data-confirm" => "本当に削除しますか？", class: "btn-delete" %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
 
+  </div>
 </div>
