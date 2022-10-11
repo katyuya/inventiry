@@ -1,7 +1,7 @@
 <div class="new-form">
   <div style="width: 500px; margin: 0px auto; padding-top: 50px;">
 
-
+  <% if @production.product %>
     <%= form_with model: @production, local:true do |f| %>
     <table>
       <tbody id="pro">
@@ -39,6 +39,7 @@
       </tbody>
     </table>
     <% end %>
+  <% else %>
     <%= form_with model: @production, local:true do |f| %>
     <table>
       <tbody id="man">
@@ -76,5 +77,6 @@
       </tbody>
     </table>
     <% end %>
+  <% end %>
   </div>
 </div>
