@@ -4,7 +4,7 @@
   <% if @production.product %>
     <%= form_with model: @production, local:true do |f| %>
     <table>
-      <tbody id="pro">
+      <tbody>
 
         <tr>
           <td class="tn">注文番号</td>
@@ -42,7 +42,7 @@
   <% else %>
     <%= form_with model: @production, local:true do |f| %>
     <table>
-      <tbody id="man">
+      <tbody>
 
         <tr>
           <td class="tn">板厚</td>
