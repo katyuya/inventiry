@@ -14,7 +14,7 @@ class ProductionsController < ApplicationController
   end
 
   def index
-    @productions = Production.all
+    @productions = Production.page(params[:page]).reverse_order
   end
 
   def edit
